@@ -1,16 +1,38 @@
-# Therapist Assistant Bot
+# 🧠 Therapist Appointment Automation Bot
 
-An automation system that helps therapists manage appointment scheduling automatically — from reading appointment emails to adding them to Google Calendar — using **Zapier**, **Google Sheets**, **Google Apps Script**, and an **AI API**.
-
----
-
-## Demo Video
- [Watch the Full Workflow Demo on YouTube](https://youtube.com/your-video-link-here)
+This project automates the process of handling therapist appointment emails using **Zapier**, **Google Sheets**, **Google Apps Script**, and an **AI API** for data extraction.
 
 ---
 
-## Project Overview
+## 🎥 Demo Video
+🔗 Watch the full workflow demo on LinkedIn: [View Video Here]([YOUR_LINKEDIN_VIDEO_LINK_HERE](https://www.linkedin.com/posts/likhwa-mpika-714960339_ai-automation-googleappsscript-ugcPost-7389469118074273792-JQ8T?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFUJZgABFjGu1-VRZLywGc3_1E5-0m4x8hc))
 
-This project integrates multiple automation tools and AI to streamline the therapist appointment process.  
-The workflow runs as follows:
+---
 
+## ⚙️ How the System Works
+
+### 1. Email Intake
+- A client sends an appointment request email to the therapist’s inbox.
+- The subject usually includes words like “appointment”, “booking”, or “request”.
+
+### 2. Zapier Integration
+- A Zapier automation monitors the therapist’s mailbox.
+- When a new appointment-related email arrives, Zapier extracts the email’s subject and body.
+- The extracted details are added as a new row to a connected **Google Sheet**.
+
+### 3. Google Apps Script Processing
+- A Google Apps Script is attached to that Google Sheet.
+- Whenever a new row is added, the script:
+  - Sends the email content to an **AI endpoint** (OpenAI API) for structured data extraction.
+  - Creates a **Google Calendar event** using the extracted date, time, and client info.
+  - Sends **confirmation emails** to both the client and the therapist.
+
+### 4. AI Data Extraction
+- The AI API formats messy, unstructured email text into structured JSON with fields such as:
+  ```json
+  {
+    "client_name": "Jane Doe",
+    "appointment_date": "2025-11-04",
+    "appointment_time": "14:00",
+    "email": "janedoe@example.com"
+  }
