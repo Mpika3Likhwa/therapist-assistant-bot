@@ -5,7 +5,7 @@ Therapist Appointment Bot
 - and sends confirmation emails.
 */
 
-const OPENAI_API_KEY = "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";
+const OPENAI_API_KEY = "API KEY HERE";
 const CALENDAR_NAME = "Therapist Appointments";
 const SHEET_NAME = "Therapist Appointment Queue";
 const SHEET_ID = "1xkKHgh7HaY2PRytQL9qMJuTtXbIRQGQ2Xy8lLbkZZMI";
