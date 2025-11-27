@@ -4,9 +4,6 @@ This project automates the process of handling therapist appointment emails usin
 
 ---
 
-## 🎥 Demo Video
-🔗 Watch the full workflow demo on LinkedIn:  [Watch the Full Workflow Demo on LinkedIn](https://www.linkedin.com/posts/likhwa-mpika-714960339_ai-automation-googleappsscript-ugcPost-7389469118074273792-JQ8T?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFUJZgABFjGu1-VRZLywGc3_1E5-0m4x8hc)
-
 ---
 
 ## ⚙️ How the System Works
