@@ -50,7 +50,7 @@ Sender email: ${senderEmail}
     method: "post",
     headers: {
       "Content-Type": "application/json",
-      "Authorization": "Bearer " + MINIMAX_API_KEY,
+      "Authorization": "Bearer " + AI_API_KEY,
       "HTTP-Referer": "https://script.google.com",
       "X-Title": "Therapist Appointment Bot"
     },
